@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelechukwu Amadi-Keke | Design & Development</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+          font-family: "Fira Code", monospace;
             background-color: #0a0a0a;
             color: #e0e0e0;
             scroll-behavior: smooth;
@@ -107,7 +111,7 @@
                 <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
             </div>
             
-            <button id="menu-toggle" class="md:hidden text-white">
+            <button id="menu-toggle" class="md:hidden text-white" type="button" title="Toggle Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -135,7 +139,7 @@
             </div>
         </div>
         <div class="w-full max-w-lg">
-            <div class="subheading text-xl md:text-2xl">Web Developer and Graphics Designer.</div>
+            <div class="subheading text-xl md:text-2xl">Backend Web Developer</div>
         </div>
         <div class="flex space-x-2 p-5">
             <a href="#projects" class="px-4 py-2 sm:px-5 sm:py-2.5 bg-purple-800 hover:bg-purple-700 text-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-center">
@@ -156,14 +160,17 @@
                 </h2>
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-2/5 mb-8 md:mb-0">
-                        <div class="relative">
+                        <div class="relative" >
                             <div class="absolute inset-0 bg-gradient-to-tr from-purple-900 to-indigo-700 rounded-lg blur-md opacity-60 transform rotate-3"></div>
-                            <img src="https://pbs.twimg.com/profile_images/1884959362126401536/joCR-ZTB_400x400.jpg" alt="About Me" class="rounded-lg relative z-10  transform  hover:rotate-2">
+                            <img src="https://pbs.twimg.com/profile_images/1884959362126401536/joCR-ZTB_400x400.jpg" alt="About Me" class="rounded-lg relative z-10  ">
                         </div>
                     </div>
                     <div class="md:w-3/5 md:pl-12">
                         <p class="text-gray-300 mb-4 leading-relaxed">
-                            I'm a passionate Graphics Designer and Web Developer with expertise in UI/UX design, Photoshop, Python, and Figma. I blend creativity with technical skill to deliver stunning and functional digital solutions.
+                            I’m a passionate web developer skilled in UI/UX design, Python, and Figma. I blend creativity with technical skill to create user-centric, visually appealing, and seamless digital solutions.
+                        </p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            With my major focus being on backend development, I have a strong foundation in Python and Django, allowing me to build robust and scalable web applications.
                         </p>
                         <p class="text-gray-300 mb-6 leading-relaxed">
                             With 2+ years of experience in the industry, I've collaborated with clients across various sectors to bring their ideas to life through intuitive interfaces, compelling visuals, and clean code.
@@ -171,7 +178,7 @@
                         <div class="flex flex-wrap gap-3 mb-6">
                             <span class="px-4 py-2 bg-purple-900 bg-opacity-40 rounded-full text-sm text-purple-300">UI/UX Design</span>
                             <span class="px-4 py-2 bg-purple-900 bg-opacity-40 rounded-full text-sm text-purple-300">Web Development</span>
-                            <span class="px-4 py-2 bg-purple-900 bg-opacity-40 rounded-full text-sm text-purple-300">Graphics Design</span>
+                    
                         </div>
                         <a href="resume.pdf" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition" download="resume.pdf">
                             <span>Download Resume</span>
@@ -189,7 +196,7 @@
     <section id="skills" class="gradient-bg py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">My Skills</span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">My Core Skills</span>
             </h2>
             
             <div class="max-w-4xl mx-auto">
@@ -258,7 +265,7 @@
                             </div>
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <span class="text-gray-300">JavaScript</span>
+                                    <span class="text-gray-300">Django</span>
                                     <span class="text-purple-400">80%</span>
                                 </div>
                                 <div class="w-full bg-gray-800 rounded-full h-2">
@@ -295,7 +302,48 @@
             </div>
         </div>
     </section>
-
+<!-- Tools & Technologies Section -->
+<section id="tools" class="bg-black py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">Tools & Technologies</span>
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Django</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Figma</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons8-solidity.svg" alt="Solidity" class="w-16 h-16 mb-4 invert">
+                <span class="text-gray-300">Solidity</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Java</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons8-tailwindcss.svg" alt="Tailwind CSS" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Tailwind CSS</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">PostgreSQL</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons8-framer-logo.svg" alt="Framer" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Framer</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons8-python.svg" alt="PostgreSQL" class="w-16 h-16 mb-4">
+                <span class="text-gray-300">Python</span>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Projects Section -->
     <section id="projects" class="bg-black py-20">
         <div class="container mx-auto px-6">
@@ -327,7 +375,7 @@
                                 </svg>
                             </a>
                             <a href="https://github.com/Im-Kaycee/Haven" class="text-purple-400 hover:text-purple-300 transition text-sm flex items-center">
-                                <span>Code</span>
+                                <span>Repository</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
@@ -343,18 +391,18 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-white">Merch Branding</h3>
-                        <p class="text-gray-400 mb-4">Simplistic merch design with model mockups for shirts and hoodies</p>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Decentalized Voting System</h3>
+                        <p class="text-gray-400 mb-4">Simplified e-Voting system made using blockchain technology to enhance security and ease of voting</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Photoshop</span>
-                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Graphics Design</span>
-                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Merch</span>
+                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Django</span>
+                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Solidity</span>
+                            <span class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Ganache</span>
                         </div>
                         <div class="flex justify-between">
-                            <a href="https://www.behance.net/gallery/214720347/Clothing-and-Merch-Designs" class="text-purple-400 hover:text-purple-300 transition text-sm flex items-center">
-                                <span>View Design</span>
+                            <a href="https://github.com/Im-Kaycee/Haven" class="text-purple-400 hover:text-purple-300 transition text-sm flex items-center">
+                                <span>Repository</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
                             </a>
                            <!-- <a href="#projects" id="case_study" class="text-purple-400 hover:text-purple-300 transition text-sm flex items-center">
@@ -425,7 +473,76 @@
             </div>
         </div>
     </section>
- 
+<!-- My Services Section -->
+<section id="services" class="gradient-bg py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">My Services</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="service-card bg-black bg-opacity-50 p-8 rounded-xl purple-glow">
+                <h3 class="text-2xl font-semibold mb-4 text-purple-300">Web Development</h3>
+                <p class="text-gray-300 mb-4">
+                    I create responsive and scalable websites using modern technologies like Django, Tailwind CSS, and JavaScript.
+                </p>
+                <ul class="space-y-2">
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Custom Web Applications</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Backend Development</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Frontend Integration</li>
+                </ul>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card bg-black bg-opacity-50 p-8 rounded-xl purple-glow">
+                <h3 class="text-2xl font-semibold mb-4 text-purple-300">UI/UX Design</h3>
+                <p class="text-gray-300 mb-4">
+                    I design user-friendly interfaces and experiences using tools like Figma and Photoshop.
+                </p>
+                <ul class="space-y-2">
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Wireframing & Prototyping</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Visual Design</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Interaction Design</li>
+                </ul>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card bg-black bg-opacity-50 p-8 rounded-xl purple-glow">
+                <h3 class="text-2xl font-semibold mb-4 text-purple-300">Blockchain Development</h3>
+                <p class="text-gray-300 mb-4">
+                    I develop decentralized applications (dApps) and smart contracts using Solidity and blockchain technologies.
+                </p>
+                <ul class="space-y-2">
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Smart Contract Development</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">dApp Integration</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Blockchain Consulting</li>
+                </ul>
+            </div>
+            <!-- Service 4 -->
+            <div class="service-card bg-black bg-opacity-50 p-8 rounded-xl purple-glow">
+                <h3 class="text-2xl font-semibold mb-4 text-purple-300">No-Code Solutions</h3>
+                <p class="text-gray-300 mb-4">
+                    I build and fix no-code websites for businesses using Framer, ensuring fast delivery and seamless functionality.
+                </p>
+                <ul class="space-y-2">
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Business Websites</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Landing Pages</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Custom No-Code Solutions</li>
+                </ul>
+            </div>
+            <!-- Service 5 -->
+            <div class="service-card bg-black bg-opacity-50 p-8 rounded-xl purple-glow">
+                <h3 class="text-2xl font-semibold mb-4 text-purple-300">API Development</h3>
+                <p class="text-gray-300 mb-4">
+                    I build robust APIs to power your applications and integrate third-party services seamlessly.
+                </p>
+                <ul class="space-y-2">
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">RESTful APIs</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Third-Party Integrations</li>
+                    <li class="px-2 py-1 bg-purple-900 bg-opacity-30 rounded text-xs text-purple-300">Custom API Solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Contact Section -->
    <div id="contact" class="gradient-bg flex items-center" style="display: flex;flex-direction: column; min-height: 50vh; justify-content: center; gap: 2vh; ">
      <h1 class="text-3xl text-center" style="margin-left: 20px; margin-right: 20px;">Let's work on your next project together</h1>
@@ -471,6 +588,11 @@
             const iframe = document.getElementById('demoVideo');
             iframe.src = iframe.src;
         }
+        AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Animation easing
+        once: true, // Whether animation should happen only once
+    });
     </script>
 </body>
 </html>
